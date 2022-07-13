@@ -1,0 +1,46 @@
+
+<div class="card">
+    <h5>Perfil</h5>
+    <p-splitter  [style]="{width:'1000'}"  styleClass="mb-5">
+        <ng-template pTemplate>
+            <div class="col flex align-items-center justify-content-center">
+                <ul>
+                <li class="conteudo-principal-escrito-titulo">
+                    Marcos Henrique
+                </li>
+                <li class="conteudo-principal-escrito-subtitulo">Piloto de drone</li>
+                <li class="conteudo-principal-escrito-subtitulo">Email: marcos.herique@gmail.com</li>
+                <li class="conteudo-principal-escrito-subtitulo">Status: Ativo</li>
+            </ul>
+            </div>
+        </ng-template>
+        <ng-template pTemplate>
+            <div class="col flex align-items-center justify-content-center">
+                <p-button label="contratos" badge="8"></p-button>
+                <p-button label="Clientes" icon="pi pi-users" styleClass="p-button-warning" badge="8" badgeClass="p-badge-danger"></p-button>
+            </div>
+        </ng-template>
+    </p-splitter>
+ 
+        <p-table  responsiveLayout="scroll">
+            <ng-template pTemplate="header">
+                <tr>
+                    <th>Cliente</th>
+                    <th>Status</th>
+                    <th>Data</th>
+                    <th>Anotação</th>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-product>
+                <tr>
+                    <td>codigo</td>
+                    <td>name</td>
+                    <td>categoria</td>
+                    <td>quantidade</td>
+                </tr>
+            </ng-template>
+        </p-table>
+    
+   
+</div>
+  

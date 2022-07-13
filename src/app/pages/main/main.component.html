@@ -1,0 +1,153 @@
+<h2>Serviços com drone</h2>
+<p-accordion>
+    <p-accordionTab header="Eventos" [selected]="true">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+            ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p-galleria [value]="images" [responsiveOptions]="responsiveOptions" [containerStyle]="{'max-width': '640px'}" [numVisible]="5" [circular]="true"
+            [autoPlay]="true" [transitionInterval]="2000"> 
+            <ng-template pTemplate="item" let-item>
+                <img [src]="item.previewImageSrc" style="width: 100%; display: block;" />
+            </ng-template>
+            <ng-template pTemplate="thumbnail" let-item>
+                <div class="grid grid-nogutter justify-content-center">
+                    <img [src]="item.thumbnailImageSrc" style="width: 100%;display: block;" />
+                </div>
+            </ng-template>
+    </p-galleria>
+    </p-accordionTab>
+    <p-accordionTab header="Processamentos de imagem">
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+            architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+            voluptatem sequi nesciunt. Consectetur, adipisci velit, sed quia non numquam eius modi.</p>
+    </p-accordionTab>
+    <p-accordionTab header="Inspeção">
+        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
+                    cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+                    Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.</p>
+    </p-accordionTab>
+</p-accordion>
+
+<div class="card">
+    <p-splitter  [style]="{width:'1000'}"  styleClass="mb-5">
+        <ng-template pTemplate>
+            <div class="col flex align-items-center justify-content-center">
+                <img src="./assets/images/drone1.jpg"  width="700" height="500">
+            </div>
+        </ng-template>
+        <ng-template pTemplate>
+            <div class="col flex align-items-center justify-content-center">
+                <div class="grid p-justify-center card">
+                    <div class="col-10 sm-6 md-4">
+                      <p-card>
+                        <div class="grid">
+                          <div class="col-12 text-center">
+                              <i class="pi pi-check"></i>
+                            <h2>SOLICITE UM ORÇAMENTO</h2>
+                          </div>
+                          <div class="col-12">
+                            <label for="">Nome:</label>
+                            <input class="col-12" type="text" pInputText />
+                          </div>
+                          <div class="col-12">
+                            <label for="">Email:</label>
+                            <input class="col-12" type="text" pInputText />
+                          </div>
+                          <div class="col-12">
+                            <label for="">Telefone:</label>
+                            <input class="col-12" type="text" pInputText />
+                          </div>
+                          <div class="col-12">
+                            <label for="">Assunto:</label>
+                            <input class="col-12" type="text" pInputText />
+                          </div>
+                          <div class="col-12 pt-3">
+                            <span class="p-float-label">
+                                <textarea inputId="textarea" rows="10" style="resize: none;" cols="75" pInputTextarea></textarea>
+                                <label [style]="{color: 'black'}" for="textarea">Texto livre</label>
+                            </span>
+                        </div>
+            
+                          <div class="col-12">
+                            <button pButton type="button" (click)="show()" label="Enviar" class="col-12"
+                            ></button>
+                          </div>
+                        </div>
+                      </p-card>
+                    </div>
+                  </div>
+            </div>
+        </ng-template>
+    </p-splitter>
+    <h2>Corretagem</h2>
+    <p-accordion>
+        <p-accordionTab  header="Corretagem" [selected]="true">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p-galleria [value]="images" [responsiveOptions]="responsiveOptions" [containerStyle]="{'max-width': '640px'}" [numVisible]="5" [circular]="true"
+                [autoPlay]="true" [transitionInterval]="2000"> 
+                <ng-template pTemplate="item" let-item>
+                    <img [src]="item.previewImageSrc" style="width: 100%; display: block;" />
+                </ng-template>
+                <ng-template pTemplate="thumbnail" let-item>
+                    <div class="grid grid-nogutter justify-content-center">
+                        <img [src]="item.thumbnailImageSrc" style="width: 100%;display: block;" />
+                    </div>
+                </ng-template>
+        </p-galleria>
+        </p-accordionTab>
+    </p-accordion>
+    <p-splitter  styleClass="mb-5">
+        <ng-template pTemplate>
+            <div class="col flex align-items-center justify-content-center">
+                <img src="./assets/images/corretagem.jpg"  width="700" height="500">
+            </div>
+        </ng-template>
+        <ng-template pTemplate>
+            <div class="col flex align-items-center justify-content-center">
+                <div class="grid p-justify-center card">
+                    <div class="col-10 sm-6 md-4">
+                        <p-card>
+                            <div class="grid">
+                              <div class="col-12 text-center">
+                                  <i class="pi pi-check"></i>
+                                <h2>SOLICITE UM ORÇAMENTO</h2>
+                              </div>
+                              <div class="col-12">
+                                <label for="">Nome:</label>
+                                <input class="col-12" type="text" pInputText />
+                              </div>
+                              <div class="col-12">
+                                <label for="">Email:</label>
+                                <input class="col-12" type="text" pInputText />
+                              </div>
+                              <div class="col-12">
+                                <label for="">Telefone:</label>
+                                <input class="col-12" type="text" pInputText />
+                              </div>
+                              <div class="col-12">
+                                <label for="">Assunto:</label>
+                                <input class="col-12" type="text" pInputText />
+                              </div>
+                              <div class="col-12 pt-3">
+                                <span class="p-float-label">
+                                    <textarea inputId="textarea" rows="10" style="resize: none;" cols="75" pInputTextarea></textarea>
+                                    <label [style]="{color: 'black'}" for="textarea">Texto livre</label>
+                                </span>
+                            </div>
+                
+                              <div class="col-12">
+                                <button pButton type="button" (click)="show()" label="Enviar" class="col-12"
+                                ></button>
+                              </div>
+                            </div>
+                          </p-card>
+                    </div>
+                  </div>
+            </div>
+        </ng-template>
+    </p-splitter>
+   
+
+  
