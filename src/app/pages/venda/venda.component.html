@@ -1,0 +1,59 @@
+
+<p-card [style]="{width: '500px'}" header="Serviço" >
+
+		
+<div class="field col-6 ">
+  <h5>Status</h5>
+  <span class="p-float-label">
+    <input id="float-input" type="text" size="30" [(ngModel)]="value1" pInputText>     
+</span>
+</div>
+		<div class="p-fluid grid formgrid">
+      		
+      <div class="field col-12 ">
+        <h5>Operação</h5>
+        <span class="p-float-label">
+          <input id="float-input" type="text" size="30" [(ngModel)]="value2" pInputText>     
+      </span>
+  </div>
+  		
+  <div class="field col-6 ">
+    <h5>Valor</h5>
+    <span class="p-float-label">
+      <input id="float-input" type="text" size="30" [(ngModel)]="value3" pInputText>     
+  </span>
+</div>
+<div class="field col-6 ">
+  <h5>Piloto</h5>	
+  <span class="p-float-label">
+    <input id="float-input" type="text" size="30" [(ngModel)]="value4" pInputText> 
+</span>			
+</div>
+<div class="field col-6 ">
+  <h5>Data inicio</h5>
+  <span class="p-float-label">
+    <input id="float-input" type="text" size="30" [(ngModel)]="value5" pInputText>     
+</span>
+</div>
+<div class="field col-6 ">
+  <h5>Data fim</h5>
+  <span class="p-float-label">
+    <input id="float-input" type="text" size="30" [(ngModel)]="value4" pInputText>     
+</span>
+</div>  	
+      <div class="field col-6 ">
+        <h5>Drone</h5>
+        <span class="p-float-label">
+          <input id="float-input" type="text" size="30" [(ngModel)]="value4" pInputText>     
+      </span>
+      </div>
+		</div>
+
+
+	<ng-template pTemplate="footer">
+		<div class="buttons-row">
+			<button type="button" pButton >Voltar</button>
+		</div>
+    
+	</ng-template>
+</p-card>
