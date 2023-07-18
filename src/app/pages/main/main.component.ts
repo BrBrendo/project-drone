@@ -11,7 +11,7 @@ import { FormBuilder, FormGroup } from '@angular/forms';
   selector: 'app-main',
   templateUrl: './main.component.html',
   styleUrls: ['./main.component.scss'],
-  providers: [DialogService,MessageService]
+  providers: [MessageService]
 })
 
 export class MainComponent implements OnInit {
@@ -50,7 +50,6 @@ export class MainComponent implements OnInit {
     private mainService: MainService,
     private primengConfig: PrimeNGConfig,
     private photoService: PhotoService,
-    public dialogService: DialogService,
     public messageService: MessageService,
     private fb: FormBuilder,
   ) { }

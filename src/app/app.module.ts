@@ -26,6 +26,8 @@ import {CalendarModule} from 'primeng/calendar';
 import { MainService } from './pages/main/main.service';
 import { HttpClientModule } from '@angular/common/http';
 import { ToastModule } from 'primeng/toast';
+import { CommonModule } from '@angular/common';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -53,7 +55,8 @@ import { ToastModule } from 'primeng/toast';
     CalendarModule,
     HttpClientModule,
     ReactiveFormsModule,
-    ToastModule
+    ToastModule,
+    CommonModule,
   ],
   providers: [PhotoService,MainService,FormBuilder],
   bootstrap: [AppComponent]
