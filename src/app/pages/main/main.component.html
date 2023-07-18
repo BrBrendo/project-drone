@@ -1,0 +1,89 @@
+<section class="content" role="banner">
+  <img src="/assets/images/banner.png" width="100%" height="500">
+</section>
+<section class="col flex align-items-center justify-content-center"><h2>Bem vindo!</h2></section>
+
+<p-accordion>
+  <p-accordionTab header="Consultoria e Assessoria" [selected]="true">
+    <p>Nossa assessoria técnica de agrimensura abrange uma ampla gama de serviços essenciais para empresas, órgãos
+      governamentais, construtoras, empreiteiras e indivíduos que necessitam de informações geoespaciais confiáveis.
+  
+    </p>
+    <p-galleria [value]="images" [responsiveOptions]="responsiveOptions" [containerStyle]="{'max-width': '640px'}"
+      [numVisible]="5" [circular]="true" [autoPlay]="true" [transitionInterval]="2000">
+      <ng-template pTemplate="item" let-item>
+        <img [src]="item.previewImageSrc" style="width: 100%; display: block;" />
+      </ng-template>
+      <ng-template pTemplate="thumbnail" let-item>
+        <div class="grid grid-nogutter justify-content-center">
+          <img [src]="item.thumbnailImageSrc" style="width: 100%;display: block;" />
+        </div>
+      </ng-template>
+    </p-galleria>
+  </p-accordionTab>
+  <p-accordionTab header="Levantamentos Topográficos">
+    <p>Realizamos medições precisas de terrenos, mapeamento de superfícies e coleta de dados, utilizando tecnologia de
+      ponta para garantir resultados detalhados e consistentes.
+      Efetuamos o georreferenciamento de propriedades rurais, cumprindo rigorosamente as normas técnicas e legislação
+      vigente, garantindo a legalidade e segurança nas transações imobiliárias.
+      Desenvolvemos projetos de loteamento que respeitam as regulamentações locais e as necessidades dos clientes,
+      proporcionando um planejamento urbano eficiente e sustentável.
+    </p>
+  </p-accordionTab>
+  <p-accordionTab header="Inspeções Técnicas e de Infraestruturas">
+    <p>Realizamos inspeções detalhadas de estruturas, vias e instalações, identificando potenciais problemas e garantindo a manutenção adequada.</p>
+  </p-accordionTab>
+</p-accordion>
+
+<div class="card">
+  <p-splitter [style]="{width:'1000'}" styleClass="mb-5">
+    <ng-template pTemplate>
+      <div class="col flex align-items-center justify-content-center">
+        <img src="./assets/images/drone1.jpg" width="700" height="500">
+      </div>
+    </ng-template>
+    <ng-template pTemplate>
+      <div class="col flex align-items-center justify-content-center">
+        <div class="grid p-justify-center card">
+
+
+          <div class="grid" [formGroup]="mfg">
+            <div class="col-12 text-center">
+              <i class="pi pi-check"></i>
+              <h2>SOLICITE UM ORÇAMENTO</h2>
+            </div>
+            <div class="col-12">
+              <label for="nome">Nome:</label>
+              <input id="nome" class="col-12" type="text" formControlName="nome" pInputText required />
+            </div>
+            <div class="col-12">
+              <label for="email">Email:</label>
+              <input id="email" class="col-12" type="text" formControlName="email" pInputText required />
+            </div>
+            <div class="col-12">
+              <label for="telefone">Telefone:</label>
+              <input class="col-12" type="text" formControlName="telefone" id="telefone" pInputText />
+            </div>
+            <div class="col-12">
+              <label for="assunto">Assunto:</label>
+              <input class="col-12" type="text" formControlName="assunto" id="assunto" pInputText />
+            </div>
+            <div class="col-12 pt-3">
+              <span class="p-float-label">
+                <textarea inputId="textarea" rows="10" formControlName="textoLivre" id="textoLivre"
+                  style="resize: none;" cols="75" pInputTextarea></textarea>
+                <label [style]="{color: 'black'}" for="textoLivre">Texto livre</label>
+              </span>
+            </div>
+            <div class="card flex justify-content-center">
+              <p-toast position="bottom-center" key="bc"></p-toast>
+              <p-button [loading]="loading" type="submit" [disabled]="mfg.invalid" (onClick)="send()">
+                {{buttionText}}
+              </p-button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </ng-template>
+  </p-splitter>

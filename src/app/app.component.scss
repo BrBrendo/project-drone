@@ -1,0 +1,237 @@
+:host {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 1px 0;
+    padding: 20px;
+    font-family:Optima, sans-serif;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .spacer {
+    flex: 1;
+    display: grid;
+    background-color: #0E2715 ;
+  }
+
+  :host ::ng-deep .flex {
+    display: grid !important;
+}
+
+  :host ::ng-deep .p-tabmenu .p-tabmenu-nav .p-tabmenuitem{
+    background: #1f2d40;
+  }
+
+  :host ::ng-deep .grid{
+  display: contents;
+  flex-wrap: wrap;
+  margin-right: -0.5rem;
+  margin-left: -0.5rem;
+  margin-top: -0.5rem;
+  }
+
+
+  :host ::ng-deep .p-tabmenu .p-tabmenu-nav .p-tabmenuitem .p-menuitem-link {
+    border: solid #255a34;
+    border-width: 0 0 2px 0;
+    border-color: transparent transparent #255a34 transparent;
+    background: #0E2715;
+    color: rgba(255, 255, 255, 0.6);
+    padding: 1rem;
+    font-weight: 600;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    transition: box-shadow 0.2s;
+    margin: 0 0 -2px 0;
+}
+
+
+  .surface-overlay {
+    background-color: #10331a !important;
+}
+
+
+
+
+.bar {
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #9AB2A2 ;
+  color: white;
+  font-weight: 800;
+  font-size: large;
+  opacity: .9;
+}
+
+  .toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    background-color: #9AB2A2    ;
+    color: white;
+    font-weight: 600;
+    font-size: large;
+    opacity: .9;
+  }
+
+  .toolbar img {
+    margin: 0 16px;
+  }
+
+  .toolbar #twitter-logo {
+    height: 40px;
+    margin: 0 8px;
+  }
+
+  .toolbar #youtube-logo {
+    height: 40px;
+    margin: 0 16px;
+  }
+
+  .toolbar #twitter-logo:hover,
+  .toolbar #youtube-logo:hover {
+    opacity: 0.8;
+  }
+
+  .content {
+    display: flex;
+    margin: 0px auto 32px;
+    padding: 120px 16px;
+    max-width: 1600px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .content-ipe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+  svg.material-icons {
+    height: 24px;
+    width: auto;
+  }
+
+  svg.material-icons:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  .card svg.material-icons path {
+    fill: #888;
+  }
+
+
+
+
+  a:hover {
+    color: #255a34;
+    text-decoration: none;
+  }
+
+  .footer{
+    flex:none;
+  }
+
+
+
+  :host ::ng-deep  .p-tabmenu .p-tabmenu-nav .p-tabmenuitem:not(.p-highlight):not(.p-disabled):hover .p-menuitem-link {
+    background: #0E2715;
+    border-color: #FDBB44;
+    color: #FDE35E;
+  }
+  :host ::ng-deep  .p-tabmenu .p-tabmenu-nav .p-tabmenuitem.p-highlight .p-menuitem-link {
+    background: #0E2715;
+    border-color: #FDBB44;
+    color: #FDBB44;
+  }
+
+  :host ::ng-deep .p-tabmenu .p-tabmenu-nav .p-tabmenuitem .p-menuitem-link:not(.p-disabled):focus {
+  box-shadow: inset 0 0 0 0.1rem #FDBB44; 
+}
+
+
+  :host ::ng-deep  .p-tabmenu .p-tabmenu-nav .p-tabmenuitem:not(.p-highlight):not(.p-disabled):hover .p-menuitem-link {
+    background: #0E2715;
+    border-color: #FDBB44;
+    color: #FDE35E;
+  }
+  .p-tabmenu .p-tabmenu-nav .p-tabmenuitem.p-highlight .p-menuitem-link {
+    background: #0E2715;
+    border-color: #FDBB44;
+    color: #FDBB44;
+  }
+
+
+  :host ::ng-deep .p-accordion .p-accordion-header:not(.p-highlight):not(.p-disabled):hover .p-accordion-header-link {
+    background: #0E2715;
+    border-color: #FDE35E;
+    color: #FDE35E;
+  }
+  :host ::ng-deep .p-accordion .p-accordion-header:not(.p-disabled).p-highlight .p-accordion-header-link {
+    background: #0E2715;
+    border-color: #FDBB44;
+    color: #FDBB44;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  :host ::ng-deep .p-accordion .p-accordion-header:not(.p-disabled).p-highlight:hover .p-accordion-header-link {
+    border-color: #FDE35E;
+    background: #0E2715;
+    color: #FDBB44;
+  }
+
+  :host ::ng-deep .p-accordion .p-accordion-header:not(.p-disabled) .p-accordion-header-link:focus {
+
+    box-shadow: 0 0 0 1px #FDBB44;
+  }
+
+
+  a:-webkit-any-link {
+    color: antiquewhite;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.whatsapp-link {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 1px 1px 2px #888;
+  z-index: 1000;
+}
+
+.fa-whatsapp {
+  margin-top: 16px;
+}

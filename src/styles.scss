@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~primeicons/primeicons.css';
+@import '~primeng/resources/primeng.min.css';
+@import '~primeng/resources/themes/luna-green/theme.css';
+@import 'primeflex/primeflex.scss';
+
+.mybutton {
+    @include styleclass('bg-blue-500 text-white hover:bg-blue-600 border-round transition-colors transition-duration-150 p-3 border-none');
+}
+
+.body {
+    display: block;
+    margin: 8px;
+    background: ivory;
+}
+
+
+
+.p-button{
+    cursor: default;
+    color: #FDE35E;
+}
+
+.p-button:disabled {
+    cursor: default;
+    color: burlywood;
+}

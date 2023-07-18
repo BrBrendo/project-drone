@@ -1,0 +1,67 @@
+:host ::ng-deep .tabview-custom {
+    i, span {
+        vertical-align: middle;
+    }
+
+    span {
+        margin: 0 .5rem;
+    }
+}
+
+:host ::ng-deep .p-button {
+    margin-right: .25rem;
+}
+
+:host ::ng-deep .p-tabview p {
+    line-height: 1.5;
+    margin: 0;
+}
+
+
+
+:host ::ng-deep .p-accordion-content {
+    background: #0E2715 ;
+    border-color: #FDE35E;
+}
+
+
+:host ::ng-deep .p-component{
+    background: #0E2715 ;
+    border-color: #FDE35E;
+}
+
+
+:host ::ng-deep .p-accordion-header{
+    background: #0E2715 ;
+    border-color: #FDE35E;
+}
+
+:host ::ng-deep  .p-accordion-header:not(.p-disabled).p-highlight .p-accordion-header-link{
+    background: #0E2715 ;   
+    border-color: #FDE35E;
+}
+
+
+:host ::ng-deep  .p-accordion-header .p-accordion-header-link {
+    background: #0E2715 ;   
+    border-color: #FDE35E;
+}
+
+:host ::ng-deep .p-accordiontab .p-accordion-content:hover {
+    border-color: #FDBB44;
+
+}
+
+:host ::ng-deep .p-splitter .p-splitter-gutter .p-splitter-gutter-handle {
+    background: #FDE35E;
+}
+
+
+.content-logo {
+    display: flex;
+    margin: 0px auto 32px;
+    padding: 120px 16px;
+    max-width: 1600px;
+    flex-direction: column;
+    align-items: center;
+  }
