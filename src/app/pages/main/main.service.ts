@@ -15,7 +15,7 @@ export class MainService {
         private httpClient: HttpClient,
     ) { }
 
-    url= 'http://localhost:3000/sendmail';
+    url= 'https://drone-node.vercel.app/sendmail';
 
     httpOptions = {
         headers: new HttpHeaders({ 'Content-Type': 'application/json' })
